@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dialogs Project</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_two_choices_alert_dialog">Two Choices Alert Dialog</string>
+    <string name="supporting_text_two_choices_alert_dialog">Escolha entre as duas opções:</string>
+    <string name="decline_two_choices_alert_dialog">Cancelar</string>
+    <string name="accept_two_choices_alert_dialog">Aceitar</string>
+
+    <string name="title_three_choices_alert_dialog">Three Choices Alert Dialog</string>
+    <string name="supporting_text_three_choices_alert_dialog">Escolha entre as três opções:</string>
+    <string name="decline_three_choices_alert_dialog">Não quero</string>
+    <string name="accept_three_choices_alert_dialog">Quero</string>
+    <string name="neutral_three_choices_alert_dialog">Só olhando</string>
+
+    <string name="title_simple_dialog">Escolha uma cor de Background</string>
+</resources>
