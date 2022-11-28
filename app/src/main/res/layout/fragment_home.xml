@@ -6,95 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_pick_date"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Selecionar Data" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_picked_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Data Selecionada: "
-            android:textSize="18sp" />
+            <Button
+                android:id="@+id/btn_pick_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Selecionar Data" />
 
-
-        <Button
-            android:id="@+id/btn_pick_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Selecionar Hora" />
-
-        <TextView
-            android:id="@+id/tv_picked_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Hora Selecionada: "
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/btn_two_choices_alert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Alerta com duas escolhas" />
-
-        <TextView
-            android:id="@+id/tv_two_choices_alert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Escolha Selecionada: "
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_picked_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Data Selecionada: "
+                android:textSize="18sp" />
 
 
-        <Button
-            android:id="@+id/btn_three_choices_alert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Alerta com três escolhas" />
+            <Button
+                android:id="@+id/btn_pick_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Selecionar Hora" />
 
-        <TextView
-            android:id="@+id/tv_three_choices_alert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Escolha Selecionada: "
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_picked_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Hora Selecionada: "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_two_choices_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Alerta com duas escolhas" />
+
+            <TextView
+                android:id="@+id/tv_two_choices_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Escolha Selecionada: "
+                android:textSize="18sp" />
 
 
-        <Button
-            android:id="@+id/btn_simple_dialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Escolha a cor de fundo." />
+            <Button
+                android:id="@+id/btn_three_choices_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Alerta com três escolhas" />
 
-        <TextView
-            android:id="@+id/tv_simple_dialog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            android:text="Cor Selecionada: "
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_three_choices_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Escolha Selecionada: "
+                android:textSize="18sp" />
 
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn_simple_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Escolha a cor de fundo." />
+
+            <TextView
+                android:id="@+id/tv_simple_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Cor Selecionada: "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_pick_date_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Selecionar Data_2" />
+
+            <TextView
+                android:id="@+id/tv_picked_date_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Data Selecionada_2: "
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>

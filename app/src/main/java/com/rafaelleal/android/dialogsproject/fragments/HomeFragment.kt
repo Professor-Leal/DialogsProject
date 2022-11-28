@@ -1,5 +1,6 @@
 package com.rafaelleal.android.dialogsproject.fragments
 
+import android.app.DatePickerDialog
 import android.graphics.Color
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
@@ -72,6 +73,10 @@ class HomeFragment : Fragment() {
 
             btnSimpleDialog.setOnClickListener {
                 onSimpleDialogClick()
+            }
+
+            btnPickDate2.setOnClickListener {
+                onDatePickerClick()
             }
         }
 
@@ -198,5 +203,44 @@ class HomeFragment : Fragment() {
         )
         dialog.show(childFragmentManager, "simpleDialog")
     }
+
+
+    fun onDatePickerClick() {
+        val cal = Calendar.getInstance()
+
+        // Interface passada para dentro do DatePickerDialog que recupera a data selecionada:
+        val dateSetListener =
+            DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+                cal.set(Calendar.YEAR, year)
+                cal.set(Calendar.MONTH, monthOfYear)
+                cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+
+                // Comando que passa a data par ao layout:
+                setInitialDate(cal)
+            }
+        callDatePicker(dateSetListener)
+    }
+
+    fun callDatePicker(dateSetListener: DatePickerDialog.OnDateSetListener?) {
+        val cal = Calendar.getInstance()
+        val datePicker =
+            DatePickerDialog(
+                requireContext(),
+                android.R.style.Theme_Holo_Light_Dialog,
+                dateSetListener,
+                cal.get(Calendar.YEAR),
+                cal.get(Calendar.MONTH),
+                cal.get(Calendar.DAY_OF_MONTH)
+            )
+        datePicker.show()
+    }
+
+    // Comando que passa a data par ao layout:
+    fun setInitialDate(cal: Calendar) {
+        val myFormat = "dd/MM/yyyy"
+        val sdf = SimpleDateFormat(myFormat)
+        binding.tvPickedDate2.setText("Data Selecionada_2: ${sdf.format(cal.time)}")
+    }
+
 
 }
